@@ -3,7 +3,7 @@
 const driver = require('playwright');
 
 /**
- * @typedef {import('../mochify').MochifyDriver} MochifyDriver
+ * @typedef {import('@mochify/mochify').MochifyDriver} MochifyDriver
  */
 
 exports.mochifyDriver = mochifyDriver;
