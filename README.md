@@ -2,7 +2,7 @@
 
 Run tests in [Playwright][web].
 
-Use this driver with the [Mochify CLI][cli] to run Mocha tests in jsdom, a headless web browser emulator for testing. See [Mochify][mochify-docs] if you are looking for Mochify drivers for other browser testing environments.
+Use this driver with the [Mochify CLI][cli] to run Mocha tests in playwright, a headless web browser emulator for testing. See [Mochify][mochify-docs] if you are looking for Mochify drivers for other browser testing environments.
 
 [web]: https://playwright.dev
 [mochify-docs]: https://github.com/mochify-js
