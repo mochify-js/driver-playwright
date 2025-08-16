@@ -2,7 +2,11 @@
 
 Run tests in [Playwright][web].
 
+Use this driver with the [Mochify CLI][cli] to run Mocha tests in jsdom, a headless web browser emulator for testing. See [Mochify][mochify-docs] if you are looking for Mochify drivers for other browser testing environments.
+
 [web]: https://playwright.dev
+[mochify-docs]: https://github.com/mochify-js
+[cli]: https://github.com/mochify-js/cli
 
 ## Usage
 
@@ -22,20 +26,11 @@ mochify --driver playwright ...
 
 The driver allows the following options to be set:
 
-### `stderr`
+- **`stderr`**: Defines the stream the test output will be written to. Defaults to `process.stderr`
 
-Defines the stream the test output will be written to. Defaults to `process.stderr`
+- **`engine`**: The browser engine to use. Right now, Playwright supports `chromium`, `firefox`and `webkit`. Defaults to `firefox`.
 
-### `engine`
-
-The browser engine to use.
-Right now, Playwright supports `chromium`, `firefox`and `webkit`.
-Defaults to `firefox`.
-
-## `url`
-
-Run tests in the context of the given URL.
-Defaults to an empty document served using the `file:` scheme.
+- **`url`**: Run tests in the context of the given URL. Defaults to an empty document served using the `file:` scheme.
 
 ## Passing through launch options to Playwright
 
