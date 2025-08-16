@@ -1,5 +1,16 @@
 # Changes
 
+## 1.0.0
+
+- [`900e815`](https://github.com/mochify-js/driver-playwright/commit/900e8152ad25bd65fe0efe70f5fe88fda2d18392)
+  ci: add c8 code coverage and Dependabot configs (#4) (Yashar Fakhari)
+- [`92c69e9`](https://github.com/mochify-js/driver-playwright/commit/92c69e938c74d1f316d74b6b6c5bde0aa1549484)
+  doc: update readme.md (Yashar Fakhari)
+- [`9f57797`](https://github.com/mochify-js/driver-playwright/commit/9f57797535552e46198776705ddae6b8fe8f4f99)
+  chore: update dependencies (Yashar Fakhari)
+
+_Released by Yashar Fakhari on 2025-08-16._
+
 ## 0.3.2
 
 - [`28bc662`](https://github.com/mochify-js/driver-playwright/commit/28bc6623bd839678356097f07eaf3ac9335b36d3)
