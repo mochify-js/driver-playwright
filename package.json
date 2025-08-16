@@ -1,6 +1,6 @@
 {
   "name": "@mochify/driver-playwright",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Playwright driver for Mochify",
   "homepage": "https://github.com/mochify-js/driver-playwright",
   "main": "index.js",
