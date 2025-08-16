@@ -1,5 +1,12 @@
 # Changes
 
+## 1.0.2
+
+- [`33ea2d7`](https://github.com/mochify-js/driver-playwright/commit/33ea2d7ffb125b7b962a7ec1435d5068db18756a)
+  doc: update README.md (Yashar Fakhari)
+
+_Released by Yashar Fakhari on 2025-08-16._
+
 ## 1.0.1
 
 - [`35b478c`](https://github.com/mochify-js/driver-playwright/commit/35b478cf0bdfcebf2c6ac5971b05447c391ab6dd)
