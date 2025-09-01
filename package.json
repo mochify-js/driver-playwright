@@ -41,7 +41,7 @@
     "ignore": "node_modules/**"
   },
   "dependencies": {
-    "playwright": "^1.54.2"
+    "playwright": "^1.55.0"
   },
   "peerDependencies": {
     "@mochify/mochify": "^1.0.1"
