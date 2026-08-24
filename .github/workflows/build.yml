@@ -18,38 +18,38 @@ jobs:
 
     strategy:
       matrix:
-        node-version: ['20.x', '22.x']
+        node-version: ['22.x', '24.x', '26.x']
 
     steps:
       - name: Checkout
         uses: actions/checkout@v6
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
       - name: Install
         run: npm ci
       - name: Lint
-        if: matrix.node-version == '22.x'
+        if: matrix.node-version == '26.x'
         run: npm run lint
       - name: Types
-        if: matrix.node-version == '22.x'
+        if: matrix.node-version == '26.x'
         run: tsc
       - name: Build
-        if: matrix.node-version == '22.x'
+        if: matrix.node-version == '26.x'
         run: npm run build
       - name: Prettier
-        if: matrix.node-version == '22.x'
+        if: matrix.node-version == '26.x'
         run: npm run prettier:check
       - name: Coverage
-        if: matrix.node-version == '22.x'
+        if: matrix.node-version == '26.x'
         run: npm run coverage:check
       - name: Test
-        if: matrix.node-version != '22.x' #coverage-check for 22.x already runs test:all
+        if: matrix.node-version != '26.x' #coverage-check for 26.x already runs test:all
         run: npm test
       - name: Integration
-        if: matrix.node-version != '22.x' #coverage-check for 22.x already runs test:all
+        if: matrix.node-version != '26.x' #coverage-check for 26.x already runs test:all
         run: npm run test:integration
 
   dependabot-automerge:
@@ -70,4 +70,4 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh pr merge --squash --auto ${{ github.event.pull_request.number }}
+          gh pr merge --squash ${{ github.event.pull_request.number }}
