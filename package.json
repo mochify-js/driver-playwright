@@ -53,7 +53,7 @@
     "@studio/related-tests": "^0.2.0",
     "@types/node": "^26.4.1",
     "c8": "^12.0.0",
-    "eslint": "^10.9.1",
+    "eslint": "^10.10.0",
     "husky": "^9.1.7",
     "lint-staged": "^17.4.1",
     "mocha": "^12.0.0",
