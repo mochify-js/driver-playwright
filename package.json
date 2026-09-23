@@ -53,7 +53,7 @@
     "@studio/changes": "^3.0.0",
     "@studio/eslint-config": "^9.0.1",
     "@studio/related-tests": "^0.2.0",
-    "@types/node": "^26.5.1",
+    "@types/node": "^26.6.2",
     "c8": "^12.0.0",
     "eslint": "^10.10.0",
     "husky": "^9.1.7",
