@@ -47,7 +47,7 @@
     "@mochify/mochify": "^2.0.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^21.2.3",
+    "@commitlint/cli": "^21.2.4",
     "@commitlint/config-conventional": "^21.2.4",
     "@sinonjs/referee-sinon": "^12.0.1",
     "@studio/changes": "^3.0.0",
